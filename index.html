@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julien Lautier - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Helvetica, sans-serif; text-align: center; margin-top: 50px; }
+        #videoContainer { display: none; }
+        input, button { margin: 10px; padding: 10px; font-size: 16px; }
+        .video-section { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Julien Lautier</h2>
+    <h3>--- 3D Animator ---</h3>
+
+
+
+    <p>Entrez le mot de passe pour voir les demo reels des projets professionnels (plusieurs projets sont sous NDA) :</p>
+    <input type="password" id="passwordInput" placeholder="Mot de passe">
+    <button onclick="checkPassword()">Valider</button>
+    
+    <div id="videoContainer">
+        <h3>Vidéos</h3>
+        
+        <div class="video-section">
+            <h4>----- Demo Reel 2025 -----</h4>
+            
+            <video controls width="600">
+                <source src="videos/Demopro_2025webV2.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <br>
+            <br>
+            <br>
+            <h4>----- Demo Reel 2019 -----</h4>
+            
+            <video controls width="600">
+                <source src="videos/demoreel_2019 (1080p).mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+            <br>
+            <br>
+            <br>
+            <h4>----- Demo Reel 2016 -----</h4>
+            
+            <video controls width="600">
+                <source src="videos/demoreel_2016 (720p).mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+        </div>
+        
+       
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById("passwordInput").value;
+            const correctPassword = "secret123"; // Change ce mot de passe
+            
+            if (password === correctPassword) {
+                document.getElementById("videoContainer").style.display = "block";
+            } else {
+                alert("Mot de passe incorrect !");
+            }
+        }
+    </script>
+        
+    <div class="info-section">
+        <h2>🎨 Principaux logiciels utilisés</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img src="icons/maya.png" alt="Maya">
+            <p>Maya <span>Keyframe animation, Mocap Cleanup, basic rigging</span></p>
+        </div>
+            <div class="skill-item">
+                <img src="icons/blender.png" alt="Blender">
+                <p>Blender <span>Keyframe animation, basic rigging, low poly modeling, VFX </span></p>
+            </div>
+            <div class="skill-item">
+                <img src="icons/aftereffect.png" alt="AfterEffects">
+                <p>AfterEffects <span>Compositing, VFX</span></p>
+            </div>
+            <div class="skill-item">
+                <img src="icons/unity.png" alt="Unity">
+                <p>Unity <span>Intégration d’animations</span></p>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="info-section">
+      <div class="tabs">
+        <button class="tab-button active" onclick="showTab('pro')">Travail Pro</button>
+        <button class="tab-button" onclick="showTab('perso')">Travail Perso</button>
+      </div>
+      
+      
+      <!-- Contenu Travail Pro -->
+      <div id="pro" class="tab-content active">
+        <h2>Projets réalisés</h2>
+
+        <!-- Ici projets pro -->
+     
+
+      <h3>🎮 Pumpkin project (Septembre 2022 - Mai 2023) - projet annulé - </h3>
+      <h4>Plateformer 3D</h4>
+      <p>
+          <ul>
+              <li>Contrôle qualité des animations des prestataires externes</li>
+              <li>Création d'animations keyframes pour le personnage principal</li>
+              <li>Intégration des animations dans Unity (state machine)</li>
+              <li>Participation à la direction artistique (design personnage, design animation)</li>
+          </ul>
+          <u>Plateformes</u>: PS5, XBox Series S/X, Steam, Switch.<br>
+          <u>Outils</u>: Maya - Blender - Unity - Substance Painter.<br>
+          <u>Studio</u>: DesignActs / R-Force Entertainement.
+      </p>
+      <hr>
+
+      <h3>🎞️ ASTER TATARIQUS (Mai 2022 - Août 2022)</h3>
+      <h4>Cinématiques pour jeu mobile iOS - Android</h4>
+      <p>
+          <ul>
+          <li>Création de cinématiques pour le jeu mobile  <a href="https://at.fg-games.co.jp/en/">ASTER TATARIQUS</a>.<br></li>
+          <li>Du layout jusqu'au polish final de l’animation (personnages et camera).<br></li>
+            <li>Gestion d'une équipe de 2 animateurs.<br></li>
+          </ul>
+          <u>Outils</u>: Maya 2020 - After Effects<br>
+          <u>Studio</u>: Gumi / Exsa.
+      </p>
+      <hr>
+      
+      <h3>🎮 Pokémon Scarlet and Violet (Juin 2021 - Avril 2022)</h3>
+      <h4>RPG pour Nintendo Switch</h4>
+      <p>
+          <ul>
+        
+          <li><strong>Gameplay animations</strong> - Set d'animation complet de 3 Pokémons (Hurle-queue / Cryodo / Persian) <br> </li>
+          <li>Support et lead d'un animateur junior sur deux autres sets d'animation de Pokemon.<br><br></li>
+              
+        </ul>
+          <u>Plateforme</u>: Switch.<br>
+          <u>Outils</u>: Maya 2019.<br>
+          <u>Studio</u>: DesignActs / Game Freak.
+      </p>
+      <hr>
+
+      <h3>🎞️ Kappa Project (Mai 2021)</h3>
+      <h4>Pachinko Cinematic</h4>
+      <p>
+          <ul>
+            <li>Animation personnages et caméras.<br></li>
+          </ul>
+          <u>Plateforme</u>: Pachinko.<br>
+          <u>Outils</u>: Maya 2018.
+      </p>
+      <hr>
+
+      <h3>🎮 Pokémon Arceus (Juillet 2020 - Avril 2021)</h3>
+      <h4>RPG pour Nintendo Switch</h4>
+      <p>
+          <ul>
+            <li><strong>Gameplay animations</strong> - Nouveaux types d'action pour tous les pokemons du jeu.<br></li>
+            
+          </ul>
+          <u>Plateforme</u>: Switch.<br>
+          <u>Outils</u>: Maya 2019.<br>
+          <u>Studio</u>: Flame Heart / Game Freak.
+      </p>
+      <hr>
+
+      <h3>🎞️ Ennichi Project (Mai - Juin 2020)</h3>
+      <h4>Exposition en réalité augmentée</h4>
+      <p>
+          <ul>
+            <li>Animations de danse des différents Yokai pour le projet 
+              <a href="https://ennichi.1-10.com/">Ennichi</a>.<br></li>
+          </ul>
+          <u>Outils</u>: Maya 2018.
+      </p>
+      <hr>
+
+      <h3>🎞️ Ensemble star!! Project (Avril 2020)</h3>
+      <h4>Game Cinematic</h4>
+      <p>
+        <ul>
+          <li>Mocap cleaning - Character animation - Camera animation - Facial Animation</li>
+        </ul>
+        
+          <u>Outils</u>: MotionBuidler 2018 - Maya 2016.
+      </p>
+      <hr>
+
+      <h3>🎮 Saga Emerald Beyond (Janvier 2020 - Mars 2020)</h3>
+      <h4>RPG game pour  Nintendo Switch, PlayStation 5, PlayStation 4, Microsoft Windows, Android, iOS </h4>
+      <p>
+        <ul>
+        <li><strong>Gameplay animation</strong> - Set d'animation de monstre </li>
+        </ul> 
+          <u>Plateforme</u>: PS5<br>
+          <u>Outils</u>: Maya 2018<br>
+          <u>Studio</u>: Opus / Squarenix
+      </p>
+      <hr>
+
+      <h3>🎞️ The Seven Deadly Sins(Décembre 2019 - Février 2020)</h3>
+      <h4>Pachinko Cinématics</h4>
+      <p>
+        <ul>
+          <li>Animation de personnages et camera.<br></li>
+          <li>Travail de rendu des différentes scenes.</li>
+        </ul>
+          <u>Outils</u>: Maya 2016/MentalRay - Maya 2018/Vray - Pencil 4+ - AfterEffects.
+      </p>
+      <hr>
+
+      <h3>🎮 Torimaster (Décembre 2019)</h3>
+      <h4>Jeu simulation de vie type Animal Crossing</h4>
+      <p>
+        <ul>
+        <li><strong>Gameplay animation</strong> - Set d'animations keyframes du personnage principal.</li>
+        </ul>  
+        <u>Plateforme</u>: PC.<br>
+          <u>Outils</u>: Maya 2018 - Unity.
+      </p>
+      <hr>
+
+      <h3>🎞️ Internship Care (Octobre 2019)</h3>
+      <p>
+        <ul>
+        <li>Prise en charge de stagiaire en animation 3D</li>
+        </ul>
+          <u>Outils</u>: Maya 18 - SyncSketch.
+      </p>
+      <hr>
+
+      <h3>🎞️ Project Magic PV (Août 2019)</h3>
+      <h4>Game Cinematic</h4>
+      <p>
+        <ul>
+          <li>Création d'une animatic pour un jeu mobile Disney.</li>
+        </ul>  
+          <u>Outils</u>: After Effect CC - Premier Pro CC - AuditionCC - Blender 2.8
+      </p>
+      </p>
+      <hr>
+
+      <h3>🎮 Yokai Watch (Juillet 19)</h3>
+      <h4>Action game</h4>
+      <p>
+        <ul>
+          <li><strong>Gameplay animations</strong> - Set d'animation d'un personnage.</li>
+        </ul>  
+          <u>Plateformes :</u> iOS, Android.<br>
+          <u>Outils</u>: Maya 2018.
+      </p>
+      <hr>
+
+      <h3>🎞️ Dori Atami Exposition (Juillet 2019)</h3>
+      <h4>Exposition</h4>
+      <p>
+        <ul>
+          <li>Simulation de particules, effets spéciaux et compositions pour une exposition audiovisuelle.</li>
+        </ul>  
+          <u>Outils</u>: Blender 2.8, After Effects CC.
+      </p>
+      <hr>
+
+      <h3>🎮 Project Honey (Juin 2019)</h3>
+      <h4>RPG game</h4>
+      <p>
+          <li><strong>Gameplay animation</strong> - Mocap cleaning et animation keyframe.</li><br><br>
+          <u>Plateformes</u>: iOS, Android.<br>
+          <u>Outils</u>: Maya 2018, Unreal Engine.
+      </p>
+      <hr>
+      <h3>🎞️ J'ai perdu mon corps (Février 2018 - Septembre 2018)</h3>
+      <h4>film d'animation</h4>
+      <p>
+        <ul>
+          <li>Animation keyframe de personnages.</li>
+        </ul>  
+          <u>Outils</u>: Blender <br>
+          <u>Studio</u>: Gaoshan Pictures
+      <hr>
+      <h3>🎞️ White Fang (Avril 2017 - Juin 2017)</h3>
+      <h4>film d'animation</h4>
+      <p>
+        <ul>
+          <li>Mocap cleaning et animation keyframe.</li>
+        </ul>  
+          <u>Outils</u>: Maya 2018 <br>
+          <u>Studio</u>: Gaoshan Pictures
+      <hr>
+      <h3>🎮 Projet Sagafro (Septembre 2015 - Décembre 2016)</h3>
+      <h4>RPG game</h4>
+      <p>
+        <ul>
+        <li><strong>Gameplay animations</strong> - Set d'animation de deux archétypes de personnage.</li>
+        <li><strong>Gameplay animations</strong> - Set d'animation de monstres.</li>
+        </ul>
+        <u>Plateformes :</u> iOS, Android.<br>
+          <u>Outils</u>: Maya 2016 <br>
+          <u>Studio</u>: Ninja Egg
+      <hr>
+      <h3>🎮 Kyub (Septembre 2014 - Aout 2015)</h3>
+      <h4>Plateformer game</h4>
+      <p>
+        <ul>
+        <li><strong>Gameplay animations</strong> - Animation de PNJ<br></li>
+        <li><strong>VFX</strong> - VFX in game.</li>
+        </ul>
+          <u>Plateformes :</u> Xbox One, Pc , Switch<br>
+          <u>Outils</u>: Maya, Unity, AfterEffects, Animate <br>
+          <u>Studio</u>: Ninja Egg
+      </p>
+    </div>
+      
+
+
+    <div id="perso" class="tab-content">
+      <h2>Projets personnels</h2>
+      <!-- Ici projets perso -->
+        <p>À venir...</p>
+
+
+
+
+
+
+
+
+    </div>
+        </div>
+        <script>
+          function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-button');
+            
+            tabs.forEach(tab => tab.classList.remove('active'));
+            buttons.forEach(button => button.classList.remove('active'));
+            
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+          }
+          </script>
+                 
+</body>
+</html>
